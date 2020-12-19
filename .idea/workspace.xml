@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba95d804-b488-4bcb-9eeb-fa81125a5fcb" name="Default Changelist" comment="" />
+    <list default="true" id="ba95d804-b488-4bcb-9eeb-fa81125a5fcb" name="Default Changelist" comment="add">
+      <change afterPath="$PROJECT_DIR$/php/php/queryBD.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php/queryPHP/QAllCharacterTitle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php/queryPHP/QAllTitle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php/queryPHP/QAllTitleAuthor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php/queryPHP/QTitleCreateData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php/queryPHP/QTitleGenre.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php/queryPHP/QTitleRating.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php/queryPHP/QTitleStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php/queryPHP/QTitleStudio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-data/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-data/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-data/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-data/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-init-files/2-query.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-init-files/2-query.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/html/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/html/Header.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +35,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Ubuntu" />
   <component name="ProjectId" id="1lNIB7G26oNlrws1nMquvIJ20Ka" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,7 +54,7 @@
     <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm" value="WSL" />
     <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm" value="WSL" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -81,12 +102,24 @@
       <workItem from="1607973968098" duration="4710000" />
       <workItem from="1607982597434" duration="19000" />
       <workItem from="1608013067033" duration="769000" />
-      <workItem from="1608385490302" duration="798000" />
+      <workItem from="1608385490302" duration="8407000" />
     </task>
+    <task id="LOCAL-00001" summary="add">
+      <created>1608390755660</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608390755660</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
