@@ -6,6 +6,7 @@ include '../html/Header.html';
     <form method="POST" action="./queryHandler.php">
     <?php
     if (isset($_POST['selTable'])) {
+        //print_r($_POST);
         $nameTable = $_POST['selTable'];
         echo "<input type='hidden' name='table' value='{$nameTable}'>";
         $queryNameCol = $pdo->prepare("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='animedb' AND TABLE_NAME='$nameTable';");

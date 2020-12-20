@@ -29,6 +29,7 @@ if(!empty($_POST)) {
 
         $queryAdd = $pdo->prepare("INSERT INTO {$nameTable}({$allcol}) VALUES ({$ins})");
         $queryAdd->execute($values);
+
         echo "<h5 class='m-3'>Выполнено.</h5>";
     }
     if(isset($_POST['delete'])) {

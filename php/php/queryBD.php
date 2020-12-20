@@ -68,7 +68,7 @@ require 'home.php';
                 <div class="row">
                     <form method="POST" action="queryPHP/QTitleRating.php">
                         <h6 class="m-1">3) Вывод всех тайтлов, которые выше или равны определенному рейтингу:
-                            <input type="number" name="number">
+                            <input type="number" name="number" min="1" max="10">
                             <button type="submit" name="title_rating" class="m-2 btn btn-outline-dark">Выполнить</button>
                         </h6>
                     </form>
