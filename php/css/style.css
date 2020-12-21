@@ -47,3 +47,12 @@ td, th {
     display: block;
     width: 15%;
 }
+
+.tableMenu {
+    background: #daac94;
+    border-radius: 10px;
+}
+
+.tableTextCol {
+    color: #275872;
+}

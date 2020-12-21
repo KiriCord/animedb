@@ -45,16 +45,18 @@ require 'home.php';
     <div class="m-2 mb-3">
         <div class="bodyMain">
             <h2 class="m-3">Запросы к БД</h2>
-            <div class="col m-3">
+            <hr>
+            <div class="col">
                 <div class="row">
-                    <form method="POST" action="queryPHP/QAllTitle.php">
+                    <form method="POST" action="QAllTitle.php">
                         <h6 class="m-1">1) Вывод всех тайтлов:
                             <button type="submit" name="all_title" class="m-2 btn btn-outline-dark">Выполнить</button>
                         </h6>
                     </form>
                 </div>
+                <hr>
                 <div class="row">
-                    <form method="POST" action="queryPHP/QTitleStatus.php">
+                    <form method="POST" action="QTitleStatus.php">
                         <h6 class="m-1">2) Вывод всех тайтлов по выбранному статусу выхода тайтла:
                             <select name="status">
                                 <option value="Announced">Announced</option>
@@ -65,16 +67,18 @@ require 'home.php';
                         </h6>
                     </form>
                 </div>
+                <hr>
                 <div class="row">
-                    <form method="POST" action="queryPHP/QTitleRating.php">
+                    <form method="POST" action="QTitleRating.php">
                         <h6 class="m-1">3) Вывод всех тайтлов, которые выше или равны определенному рейтингу:
-                            <input type="number" name="number" min="1" max="10">
+                            <input type="number" name="rating" min="1" max="10">
                             <button type="submit" name="title_rating" class="m-2 btn btn-outline-dark">Выполнить</button>
                         </h6>
                     </form>
                 </div>
+                <hr>
                 <div class="row">
-                    <form method="POST" action="queryPHP/QTitleGenre.php">
+                    <form method="POST" action="QTitleGenre.php">
                         <h6 class="m-1">4) Вывод всех тайтлов, определённого жанра:
                             <select name="all_genre">
                             <?
@@ -88,18 +92,20 @@ require 'home.php';
                         </h6>
                     </form>
                 </div>
+                <hr>
                 <div class="row">
-                    <form method="POST" action="queryPHP/QTitleCreateData.php">
+                    <form method="POST" action="QTitleCreateData.php">
                         <h6 class="m-1">5) Вывод всех тайтлов, по определённой дате:
                             <input type="date" name="date_of_creation">
                             <button type="submit" name="title_date" class="m-2 btn btn-outline-dark">Выполнить</button>
                         </h6>
                     </form>
                 </div>
+                <hr>
                 <div class="row">
-                    <form method="POST" action="queryPHP/QTitleRating.php">
+                    <form method="POST" action="QAllCharacterTitle.php">
                         <h6 class="m-1">6) Вывод всех персонажей по какому-либо тайтлу:
-                            <select name="all_title">
+                            <select name="all_title_char">
                                 <?
                                 foreach ($pdo->query('SELECT DISTINCT id,title FROM titles') as $row)
                                 {
@@ -111,8 +117,9 @@ require 'home.php';
                         </h6>
                     </form>
                 </div>
+                <hr>
                 <div class="row">
-                    <form method="POST" action="queryPHP/QTitleStudio.php">
+                    <form method="POST" action="QTitleStudio.php">
                         <h6 class="m-1">7) Вывод всех тайтлов по выбранной студии:
                             <select name="all_studio">
                                 <?
@@ -126,8 +133,9 @@ require 'home.php';
                         </h6>
                     </form>
                 </div>
+                <hr>
                 <div class="row">
-                    <form method="POST" action="queryPHP/QTitleStudio.php">
+                    <form method="POST" action="QAllTitleAuthor.php">
                         <h6 class="m-1">8) Вывод всех тайтлов по автору:
                             <select name="all_author">
                                 <?

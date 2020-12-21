@@ -10,8 +10,10 @@ $colname = array_map(function ($x){
     return $x[0];
 },$NameCol_Array);
 
+
 if(!empty($_POST)) {
     if(isset($_POST['add'])) {
+
         $id_index = array_search('id', $colname);
         if(is_int($id_index)) {
             unset($colname[$id_index]);
@@ -28,14 +30,53 @@ if(!empty($_POST)) {
         }
 
         $queryAdd = $pdo->prepare("INSERT INTO {$nameTable}({$allcol}) VALUES ({$ins})");
-        $queryAdd->execute($values);
-
-        echo "<h5 class='m-3'>Выполнено.</h5>";
+        //$queryAdd->execute($values);
+        if($queryAdd->execute($values)) {
+            echo "
+            <div class='alert alert-success m-3' role='alert'>
+              <h4 class='alert-heading'>Выполнено! :)</h4>
+              <p>Вы успешно выполнили это запрос.</p>
+              <hr>
+              <p class='mb-0'>Продолжайте работу.</p>
+            </div>
+        ";
+        }
+        else
+        {
+            echo "
+            <div class='alert alert-danger m-3' role='alert'>
+              <h4 class='alert-heading'>Не выполнено! :(</h4>
+              <p>Запрос не был выполнен.</p>
+              <hr>
+              <p class='mb-0'>Попробуйте ещё раз.</p>
+            </div>
+        ";
+        }
     }
     if(isset($_POST['delete'])) {
         $queryDelete = $pdo->prepare("DELETE FROM $nameTable WHERE id='{$_POST['selected']}'");
-        $queryDelete->execute();
-        echo "<h5 class='m-3'>Выполнено.</h5>";
+        if($queryDelete->execute())
+        {
+            echo "
+            <div class='alert alert-success m-3' role='alert'>
+              <h4 class='alert-heading'>Выполнено! :)</h4>
+              <p>Вы успешно выполнили это запрос.</p>
+              <hr>
+              <p class='mb-0'>Продолжайте работать.</p>
+            </div>
+        ";
+        }
+        else
+        {
+            echo "
+            <div class='alert alert-danger m-3' role='alert'>
+              <h4 class='alert-heading'>Не выполнено! :(</h4>
+              <p>Запрос не был выполнен.</p>
+              <hr>
+              <p class='mb-0'>Попробуйте ещё раз.</p>
+            </div>
+        ";
+        }
     }
 
     if(isset($_POST['edit'])) {
@@ -53,8 +94,27 @@ if(!empty($_POST)) {
             $values[$item] = $_POST[$item];
         }
         $queryEdit = $pdo->prepare("UPDATE $nameTable SET {$ins} WHERE id='{$_POST['selected']}'");
-        $queryEdit->execute($values);
-        echo "<h5 class='m-3'>Выполнено.</h5>";
+        if($queryEdit->execute($values)) {
+            echo "
+            <div class='alert alert-success m-3' role='alert'>
+              <h4 class='alert-heading'>Выполнено! :)</h4>
+              <p>Вы успешно выполнили это запрос.</p>
+              <hr>
+              <p class='mb-0'>Продолжайте работать.</p>
+            </div>
+        ";
+        }
+        else
+            {
+                echo "
+            <div class='alert alert-danger m-3' role='alert'>
+              <h4 class='alert-heading'>Не выполнено! :(</h4>
+              <p>Запрос не был выполнен.</p>
+              <hr>
+              <p class='mb-0'>Попробуйте ещё раз.</p>
+            </div>
+        ";
+            }
     }
 }
 
