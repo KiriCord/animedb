@@ -29,18 +29,19 @@ CREATE TABLE IF NOT EXISTS titles
     episode_count INT NOT NULL,
     rating INT CHECK(rating > 0 AND rating <= 10),
     exit_status ENUM('Announced','Came Out','Ongoing') NOT NULL,
-    id_studio BIGINT NOT NULL,
-    id_author BIGINT NOT NULL,
-    FOREIGN KEY (id_studio) REFERENCES studio(id),
-    FOREIGN KEY (id_author) REFERENCES author(id)
+    id_studio BIGINT,
+    id_author BIGINT,
+    FOREIGN KEY (id_studio) REFERENCES studio(id) ON DELETE SET NULL,
+    FOREIGN KEY (id_author) REFERENCES author(id) ON DELETE SET NULL
 );
 
 CREATE TABLE IF NOT EXISTS title_to_genre
 (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
     id_title BIGINT,
     id_genre BIGINT,
-    FOREIGN KEY  (id_title) REFERENCES titles(id),
-    FOREIGN KEY (id_genre) REFERENCES genre_title(id)
+    FOREIGN KEY  (id_title) REFERENCES titles(id) ON DELETE SET NULL,
+    FOREIGN KEY (id_genre) REFERENCES genre_title(id) ON DELETE SET NULL
 );
 
 CREATE TABLE IF NOT EXISTS the_character
@@ -53,8 +54,9 @@ CREATE TABLE IF NOT EXISTS the_character
 
 CREATE TABLE IF NOT EXISTS character_to_title
 (
-  id_title BIGINT NOT NULL,
-  id_character BIGINT NOT NULL,
-  FOREIGN KEY (id_title) REFERENCES  titles(id),
-  FOREIGN KEY (id_character) REFERENCES the_character(id)
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    id_title BIGINT,
+    id_character BIGINT,
+    FOREIGN KEY (id_title) REFERENCES  titles(id) ON DELETE SET NULL,
+    FOREIGN KEY (id_character) REFERENCES the_character(id) ON DELETE SET NULL
 );

@@ -2,8 +2,9 @@
 require './php/home.php';
 include './html/Header.html';
 ?>
+
     <div class="m-3 tableSelectContainer">
-                        <div class="list-group list-group-horizontal m-3 p-3">
+        <div class="list-group list-group-horizontal m-3 p-3">
                             <form method="POST" action="/php/TGenre.php">
                                 <button name="genre_title" class="list-group-item list-group-item-action">Жанры</button>
                             </form>

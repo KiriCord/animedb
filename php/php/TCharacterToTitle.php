@@ -42,7 +42,7 @@ include '../html/Header.html';
             <?
             foreach ($pdo->query('SELECT * FROM character_to_title JOIN the_character tc on tc.id = character_to_title.id_character JOIN titles t on t.id = character_to_title.id_title;') as $row) {
                 echo "<tr>
-                        <th><input type='radio' name='selected' value='{$row['id_character']}'></th>
+                        <th><input type='radio' name='selected' value='{$row['id']}'></th>
                         <th>{$row['id_title']}</th>
                         <th>{$row['title']}</th>
                         <th class='tableTextCol'>{$row['id_character']}</th>

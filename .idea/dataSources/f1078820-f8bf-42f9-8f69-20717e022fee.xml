@@ -908,178 +908,202 @@
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="289" parent="278" name="id_title">
-      <Position>1</Position>
-      <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="290" parent="278" name="id_character">
-      <Position>2</Position>
-      <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="291" parent="278" name="id_title">
-      <ColNames>id_title</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="292" parent="278" name="id_character">
-      <ColNames>id_character</ColNames>
-      <Type>btree</Type>
-    </index>
-    <foreign-key id="293" parent="278" name="character_to_title_ibfk_1">
-      <ColNames>id_title</ColNames>
-      <RefTableName>titles</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="294" parent="278" name="character_to_title_ibfk_2">
-      <ColNames>id_character</ColNames>
-      <RefTableName>the_character</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="295" parent="279" name="id">
+    <column id="289" parent="278" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="296" parent="279" name="name_genre">
+    <column id="290" parent="278" name="id_title">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+    </column>
+    <column id="291" parent="278" name="id_character">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+    </column>
+    <index id="292" parent="278" name="id_title">
+      <ColNames>id_title</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="293" parent="278" name="id_character">
+      <ColNames>id_character</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="294" parent="278" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="295" parent="278" name="character_to_title_ibfk_1">
+      <ColNames>id_title</ColNames>
+      <RefTableName>titles</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="296" parent="278" name="character_to_title_ibfk_2">
+      <ColNames>id_character</ColNames>
+      <RefTableName>the_character</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="297" parent="279" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="298" parent="279" name="name_genre">
       <Position>2</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="297" parent="279" name="PRIMARY">
+    <key id="299" parent="279" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="298" parent="280" name="id">
+    <column id="300" parent="280" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="299" parent="280" name="name_studio">
+    <column id="301" parent="280" name="name_studio">
       <Position>2</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="300" parent="280" name="PRIMARY">
+    <key id="302" parent="280" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="301" parent="281" name="id">
+    <column id="303" parent="281" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="302" parent="281" name="first_name_char">
+    <column id="304" parent="281" name="first_name_char">
       <Position>2</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="303" parent="281" name="second_name_char">
+    <column id="305" parent="281" name="second_name_char">
       <Position>3</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="304" parent="281" name="alias">
+    <column id="306" parent="281" name="alias">
       <Position>4</Position>
       <DataType>varchar(64)|0s</DataType>
     </column>
-    <key id="305" parent="281" name="PRIMARY">
+    <key id="307" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="306" parent="282" name="id_title">
+    <column id="308" parent="282" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="307" parent="282" name="id_genre">
+    <column id="309" parent="282" name="id_title">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
     </column>
-    <index id="308" parent="282" name="id_title">
+    <column id="310" parent="282" name="id_genre">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+    </column>
+    <index id="311" parent="282" name="id_title">
       <ColNames>id_title</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="309" parent="282" name="id_genre">
+    <index id="312" parent="282" name="id_genre">
       <ColNames>id_genre</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="310" parent="282" name="title_to_genre_ibfk_1">
+    <key id="313" parent="282" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="314" parent="282" name="title_to_genre_ibfk_1">
       <ColNames>id_title</ColNames>
       <RefTableName>titles</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
     </foreign-key>
-    <foreign-key id="311" parent="282" name="title_to_genre_ibfk_2">
+    <foreign-key id="315" parent="282" name="title_to_genre_ibfk_2">
       <ColNames>id_genre</ColNames>
       <RefTableName>genre_title</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
     </foreign-key>
-    <column id="312" parent="283" name="id">
+    <column id="316" parent="283" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="313" parent="283" name="title">
+    <column id="317" parent="283" name="title">
       <Position>2</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="314" parent="283" name="date_of_creation">
+    <column id="318" parent="283" name="date_of_creation">
       <Position>3</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="315" parent="283" name="episode_count">
+    <column id="319" parent="283" name="episode_count">
       <Position>4</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="316" parent="283" name="rating">
+    <column id="320" parent="283" name="rating">
       <Position>5</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="317" parent="283" name="exit_status">
+    <column id="321" parent="283" name="exit_status">
       <Position>6</Position>
       <DataType>enum(&apos;Announced&apos;, &apos;Came Out&apos;, &apos;Ongoing&apos;)|0e</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="318" parent="283" name="id_studio">
+    <column id="322" parent="283" name="id_studio">
       <Position>7</Position>
       <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="319" parent="283" name="id_author">
+    <column id="323" parent="283" name="id_author">
       <Position>8</Position>
       <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <index id="320" parent="283" name="id_studio">
+    <index id="324" parent="283" name="id_studio">
       <ColNames>id_studio</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="321" parent="283" name="id_author">
+    <index id="325" parent="283" name="id_author">
       <ColNames>id_author</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="322" parent="283" name="PRIMARY">
+    <key id="326" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="323" parent="283" name="titles_ibfk_1">
+    <foreign-key id="327" parent="283" name="titles_ibfk_1">
       <ColNames>id_studio</ColNames>
       <RefTableName>studio</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
     </foreign-key>
-    <foreign-key id="324" parent="283" name="titles_ibfk_2">
+    <foreign-key id="328" parent="283" name="titles_ibfk_2">
       <ColNames>id_author</ColNames>
       <RefTableName>author</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
     </foreign-key>
   </database-model>
 </dataSource>

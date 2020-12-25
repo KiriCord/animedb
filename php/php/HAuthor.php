@@ -2,39 +2,14 @@
 require 'home.php';
 include '../html/Header.html';
 
-
 print_r($_POST);
-$nameTable = $_POST['table'];
-$queryNameCol = $pdo->prepare("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='animedb' AND TABLE_NAME='$nameTable';");
-$queryNameCol->execute();
-$NameCol_Array = $queryNameCol->fetchAll(PDO::FETCH_NUM);
-$colname = array_map(function ($x){
-    return $x[0];
-},$NameCol_Array);
-
 
 if(!empty($_POST)) {
     if(isset($_POST['add'])) {
-
-        $id_index = array_search('id', $colname);
-        if(is_int($id_index)) {
-            unset($colname[$id_index]);
-        }
-        //unset($colname[array_search('id',$colname)]);
-        $insert = array_map(function ($x) {
-            return ':' . $x;
-        }, $colname);
-        $allcol = implode(',', $colname);
-        $ins = implode(',', $insert);
-        $values = [];
-        foreach ($colname as $item) {
-            $values[$item] = $_POST[$item];
-        }
-
-        $queryAdd = $pdo->prepare("INSERT INTO {$nameTable}({$allcol}) VALUES ({$ins})");
-        print_r($queryAdd);
-        //$queryAdd->execute($values);
-        if($queryAdd->execute($values)) {
+        $sql = "INSERT INTO author(first_name, second_name, DOB) VALUES (:first_name, :second_name, :DOB)";
+        $queryAdd = $pdo->prepare($sql);
+        $value = array(':first_name'=>$_POST['first_name'], ':second_name'=>$_POST['second_name'], ':DOB'=>$_POST['DOB']);
+        if($queryAdd ->execute($value)) {
             echo "
             <div class='alert alert-success m-3' role='alert'>
               <h4 class='alert-heading'>Выполнено! :)</h4>
@@ -56,8 +31,10 @@ if(!empty($_POST)) {
         ";
         }
     }
+
     if(isset($_POST['delete'])) {
-        $queryDelete = $pdo->prepare("DELETE FROM $nameTable WHERE id='{$_POST['selected']}'");
+        $sql = "DELETE FROM author WHERE id='{$_POST['selected']}'";
+        $queryDelete = $pdo->prepare($sql);
         print_r($queryDelete);
         if($queryDelete->execute())
         {
@@ -83,23 +60,12 @@ if(!empty($_POST)) {
         }
     }
 
-    if(isset($_POST['edit'])) {
-        $id_index = array_search('id', $colname);
-        if(is_int($id_index)) {
-            unset($colname[$id_index]);
-        }
-        //unset($colname[array_search('id',$colname)]);
-        $insert = array_map(function ($x) {
-            return "{$x}=:" . $x;
-        }, $colname);
-        $ins = implode(',', $insert);
-        $values = [];
-        foreach ($colname as $item) {
-            $values[$item] = $_POST[$item];
-        }
-        $queryEdit = $pdo->prepare("UPDATE $nameTable SET {$ins} WHERE id='{$_POST['selected']}'");
-        if($queryEdit->execute($values)) {
-            echo "
+        if(isset($_POST['edit'])) {
+            $sql = "UPDATE author SET first_name = :first_name, second_name = :second_name, DOB = :DOB WHERE id='{$_POST['selected']}'";
+            $queryEdit= $pdo->prepare($sql);
+            $value = array(':first_name'=>$_POST['first_name'], ':second_name'=>$_POST['second_name'], ':DOB'=>$_POST['DOB']);
+            if($queryEdit->execute($value)) {
+                echo "
             <div class='alert alert-success m-3' role='alert'>
               <h4 class='alert-heading'>Выполнено! :)</h4>
               <p>Вы успешно выполнили это запрос.</p>
@@ -107,8 +73,8 @@ if(!empty($_POST)) {
               <p class='mb-0'>Продолжайте работать.</p>
             </div>
         ";
-        }
-        else
+            }
+            else
             {
                 echo "
             <div class='alert alert-danger m-3' role='alert'>
@@ -119,7 +85,8 @@ if(!empty($_POST)) {
             </div>
         ";
             }
-    }
+
+        }
 }
 
 ?>
@@ -127,3 +94,4 @@ if(!empty($_POST)) {
 <?php
 include '../html/Footer.html';
 ?>
+

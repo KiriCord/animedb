@@ -35,16 +35,19 @@ include '../html/Header.html';
                 <th>-</th>
                 <th>ID Тайтла</th>
                 <th>Название тайтла</th>
-                <th class='tableTextCol'>ID Жанра</th>
+<!--                <th class='tableTextCol'>ID Жанра</th>   <th class='tableTextCol'>{$row['id_genre']}</th>-->
                 <th class='tableTextCol'>Название жанра</th>
             </tr>
             <?
-            foreach ($pdo->query('SELECT * FROM title_to_genre JOIN genre_title gt on gt.id = title_to_genre.id_genre JOIN titles t on t.id = title_to_genre.id_title;') as $row) {
+            foreach ($pdo->query('SELECT t.id as id_title, t.title as title, group_concat(gt.name_genre) as name_genre
+                                            FROM title_to_genre
+                                                JOIN genre_title gt on gt.id = title_to_genre.id_genre
+                                                JOIN titles t on t.id = title_to_genre.id_title
+                                                    group by t.id;') as $row) {
                 echo "<tr>
-                        <th><input type='radio' name='selected' value='{$row['id_character']}'></th>
+                        <th><input type='radio' name='selected' value='{$row['tg_id']}'></th>
                         <th>{$row['id_title']}</th>
-                        <th>{$row['title']}</th>
-                        <th class='tableTextCol'>{$row['id_genre']}</th>
+                        <th>{$row['title']}</th>                      
                         <th class='tableTextCol'>{$row['name_genre']}</th>
 
                 ";
@@ -59,8 +62,24 @@ include '../html/Header.html';
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">ID Тайтла и ID Жанра</span>
                     </div>
-                    <input min="0" name="id_title" type="number" class="form-control" aria-label="ID Тайтла">
-                    <input min="0" name="id_genre" type="number" class="form-control" aria-label="ID Жанра">
+                    <select name="id_title" class='form-control'>
+                        <?
+                        foreach ($pdo->query('SELECT id, title FROM titles') as $row)
+                        {
+                            echo "<option value='{$row['id']}'>{$row['id']} - {$row['title']}</option>";
+                        }
+                        ?>
+                    </select>
+                    <select name="id_genre" class='form-control'>
+                        <?
+                        foreach ($pdo->query('SELECT * FROM genre_title') as $row)
+                        {
+                            echo "<option value='{$row['id']}'>{$row['id']} - {$row['name_genre']}</option>";
+                        }
+                        ?>
+                    </select>
+<!--                    <input min="0" name="id_title" type="number" class="form-control" aria-label="ID Тайтла">-->
+<!--                    <input min="0" name="id_genre" type="number" class="form-control" aria-label="ID Жанра">-->
                 </div>
 
                 <div class="p-2">

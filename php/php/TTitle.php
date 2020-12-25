@@ -109,14 +109,29 @@ include '../html/Header.html';
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">ID Студии:</span>
                     </div>
-                    <input min="1" name="id_studio" type="number" class="form-control" aria-label="Кол-во эпизодов">
+                    <select name="id_studio" class='form-control'>
+                        <?
+                        foreach ($pdo->query('SELECT id, name_studio FROM studio') as $row)
+                        {
+                            echo "<option value='{$row['id']}'>{$row['id']} - {$row['name_studio']}</option>";
+                        }
+                        ?>
+                    </select>
+<!--                    <input min="1" name="id_studio" type="number" class="form-control" aria-label="ID Студии">-->
                 </div>
 
                 <div class="input-group p-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">ID автора:</span>
                     </div>
-                    <input min="1" name="id_author" type="number" class="form-control" aria-label="Кол-во эпизодов">
+                    <select name="id_author" class='form-control'>
+                    <?
+                    foreach ($pdo->query('SELECT id, first_name, second_name FROM author') as $row)
+                    {
+                        echo "<option value='{$row['id']}'>{$row['id']} - {$row['first_name']} {$row['second_name']}</option>";
+                    }
+                    ?>
+                    </select>
                 </div>
 
                 <div class="p-2">
