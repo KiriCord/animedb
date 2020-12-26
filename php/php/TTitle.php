@@ -30,7 +30,7 @@ include '../html/Header.html';
 <div class="m-3 p-1 tableSelectContainer">
     <form method="POST" action="./HTitle.php">
         <h3 class="m-3" align="center">Таблица "Тайтлы"</h3>
-        <table id='table' class='table table-hover table-sm p-2 fixTable'>
+        <table id='table' class='table table-hover table-reflow table-sm p-2 fixTable'>
             <tr>
                 <th>-</th>
                 <th>id</th>
@@ -39,13 +39,13 @@ include '../html/Header.html';
                 <th>Кол-во эпизодов</th>
                 <th>Рейтинг</th>
                 <th>Статус выхода</th>
-                <th class="tableTextCol">ID студии</th>
+<!--                <th class="tableTextCol">ID студии</th> <th class='tableTextCol'>{$row['id_studio']}</th>-->
                 <th class="tableTextCol">Название студии</th>
-                <th class="tableTextCol">ID автора</th>
+<!--                <th class="tableTextCol">ID автора</th> <th class='tableTextCol'>{$row['id_author']}</th>-->
                 <th class="tableTextCol">ФИ автора</th>
             </tr>
             <?
-            foreach ($pdo->query('SELECT titles.id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author, name_studio, first_name, second_name FROM titles JOIN studio s on s.id = titles.id_studio JOIN author a on a.id = titles.id_author ORDER BY id') as $row) {
+            foreach ($pdo->query('SELECT titles.id, title, date_of_creation, episode_count, rating, exit_status, name_studio, first_name, second_name FROM titles JOIN studio s on s.id = titles.id_studio JOIN author a on a.id = titles.id_author ORDER BY id') as $row) {
                 echo "<tr>
                         <th><input type='radio' name='selected' value='{$row['id']}'></th>
                         <th>{$row['id']}</th>
@@ -53,10 +53,8 @@ include '../html/Header.html';
                         <th>{$row['date_of_creation']}</th>
                         <th>{$row['episode_count']}</th>
                         <th>{$row['rating']}</th>
-                        <th>{$row['exit_status']}</th>
-                        <th class='tableTextCol'>{$row['id_studio']}</th>
-                        <th class='tableTextCol'>{$row['name_studio']}</th>
-                        <th class='tableTextCol'>{$row['id_author']}</th>
+                        <th>{$row['exit_status']}</th>                    
+                        <th class='tableTextCol'>{$row['name_studio']}</th>                       
                         <th class='tableTextCol'>{$row['first_name']} {$row['second_name']}</th>
                 ";
             }

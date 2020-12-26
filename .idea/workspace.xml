@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba95d804-b488-4bcb-9eeb-fa81125a5fcb" name="Default Changelist" comment="QueryDB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/php/HAuthor.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/HAuthor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/php/HCharacter.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/HCharacter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/php/HCharacterToTitle.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/HCharacterToTitle.php" afterDir="false" />
@@ -10,12 +11,7 @@
       <change beforePath="$PROJECT_DIR$/php/php/HStudio.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/HStudio.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/php/HTitle.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/HTitle.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/php/HTitleToGenre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/HTitleToGenre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TCharacter.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TCharacter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TCharacterToTitle.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TCharacterToTitle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TGenre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TGenre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TStudio.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TStudio.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/php/TTitle.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TTitle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TTitleToGenre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TTitleToGenre.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +107,8 @@
       <workItem from="1608902531440" duration="8755000" />
       <workItem from="1608921529665" duration="2713000" />
       <workItem from="1608925215600" duration="2564000" />
-      <workItem from="1608963344355" duration="5645000" />
+      <workItem from="1608963344355" duration="5860000" />
+      <workItem from="1608983760486" duration="4702000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1608390755660</created>
@@ -148,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608927329673</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Rework Query Handler.">
+      <created>1608969181055</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608969181055</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +176,8 @@
     <MESSAGE value="edit queryBD" />
     <MESSAGE value="Remaking everything.&#10;Add query." />
     <MESSAGE value="Started rework Query Handler." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started rework Query Handler." />
+    <MESSAGE value="Rework Query Handler." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rework Query Handler." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

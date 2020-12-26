@@ -34,7 +34,7 @@ if(!empty($_POST)) {
     }
 
     if(isset($_POST['delete'])) {
-        $sql = "DELETE FROM author WHERE id=:id";
+        $sql = "DELETE FROM the_character WHERE id=:id";
         $queryDelete = $pdo->prepare($sql);
         $value = array(':id'=>$_POST['selected']);
         //print_r($queryDelete);
@@ -45,7 +45,7 @@ if(!empty($_POST)) {
               <h4 class='alert-heading'>Выполнено! :)</h4>
               <p>Вы успешно выполнили это запрос.</p>
               <hr>
-              <p class='mb-0'>Продолжайте работать.</p>
+              <p class='mb-0'>Продолжайте работу.</p>
             </div>
         ";
         }
@@ -73,7 +73,7 @@ if(!empty($_POST)) {
               <h4 class='alert-heading'>Выполнено! :)</h4>
               <p>Вы успешно выполнили это запрос.</p>
               <hr>
-              <p class='mb-0'>Продолжайте работать.</p>
+              <p class='mb-0'>Продолжайте работу.</p>
             </div>
         ";
         }

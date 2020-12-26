@@ -30,7 +30,7 @@ if(!empty($_POST)) {
             </div>
         ";
         }
-        echo "<a class='m-3 btn btn-outline-dark' href='TAuthor.php.php'>Назад</a>";
+        echo "<a class='m-3 btn btn-outline-dark' href='TAuthor.php'>Назад</a>";
     }
 
     if(isset($_POST['delete'])) {
@@ -44,7 +44,7 @@ if(!empty($_POST)) {
               <h4 class='alert-heading'>Выполнено! :)</h4>
               <p>Вы успешно выполнили это запрос.</p>
               <hr>
-              <p class='mb-0'>Продолжайте работать.</p>
+              <p class='mb-0'>Продолжайте работу.</p>
             </div>
         ";
         }
@@ -59,7 +59,7 @@ if(!empty($_POST)) {
             </div>
         ";
         }
-        echo "<a class='m-3 btn btn-outline-dark' href='TAuthor.php.php'>Назад</a>";
+        echo "<a class='m-3 btn btn-outline-dark' href='TAuthor.php'>Назад</a>";
     }
 
         if(isset($_POST['edit'])) {
@@ -72,7 +72,7 @@ if(!empty($_POST)) {
               <h4 class='alert-heading'>Выполнено! :)</h4>
               <p>Вы успешно выполнили это запрос.</p>
               <hr>
-              <p class='mb-0'>Продолжайте работать.</p>
+              <p class='mb-0'>Продолжайте работу.</p>
             </div>
         ";
             }
@@ -87,7 +87,7 @@ if(!empty($_POST)) {
             </div>
         ";
             }
-            echo "<a class='m-3 btn btn-outline-dark' href='TAuthor.php.php'>Назад</a>";
+            echo "<a class='m-3 btn btn-outline-dark' href='TAuthor.php'>Назад</a>";
         }
 }
 
