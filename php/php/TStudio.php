@@ -28,7 +28,7 @@ include '../html/Header.html';
 </div>
 
 <div class="m-3 p-1 tableSelectContainer">
-    <form method="POST" action="./queryHandler.php">
+    <form method="POST" action="./HStudio.php">
         <h3 class="m-3" align="center">Таблица "Студии"</h3>
         <table id='table' class='table table-hover table-sm p-2 fixTable'>
             <tr>

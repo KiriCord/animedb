@@ -28,7 +28,7 @@ include '../html/Header.html';
 </div>
 
 <div class="m-3 p-1 tableSelectContainer">
-    <form method="POST" action="./queryHandler.php">
+    <form method="POST" action="./HTitleToGenre.php">
         <h3 class="m-3" align="center">Таблица "Связь персонажей и тайтлов"</h3>
         <table id='table' class='table table-hover table-sm p-2 fixTable'>
             <tr>
@@ -39,13 +39,11 @@ include '../html/Header.html';
                 <th class='tableTextCol'>Название жанра</th>
             </tr>
             <?
-            foreach ($pdo->query('SELECT t.id as id_title, t.title as title, group_concat(gt.name_genre) as name_genre
-                                            FROM title_to_genre
-                                                JOIN genre_title gt on gt.id = title_to_genre.id_genre
-                                                JOIN titles t on t.id = title_to_genre.id_title
-                                                    group by t.id;') as $row) {
+            foreach ($pdo->query('SELECT title_to_genre.id as ctt_id, id_title, title, name_genre FROM title_to_genre 
+                                                JOIN genre_title gt on gt.id = title_to_genre.id_genre 
+                                                JOIN titles t on t.id = title_to_genre.id_title;') as $row) {
                 echo "<tr>
-                        <th><input type='radio' name='selected' value='{$row['tg_id']}'></th>
+                        <th><input type='radio' name='selected' value='{$row['ctt_id']}'></th>
                         <th>{$row['id_title']}</th>
                         <th>{$row['title']}</th>                      
                         <th class='tableTextCol'>{$row['name_genre']}</th>

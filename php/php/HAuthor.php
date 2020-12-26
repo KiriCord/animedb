@@ -2,7 +2,7 @@
 require 'home.php';
 include '../html/Header.html';
 
-print_r($_POST);
+//print_r($_POST);
 
 if(!empty($_POST)) {
     if(isset($_POST['add'])) {
@@ -30,12 +30,13 @@ if(!empty($_POST)) {
             </div>
         ";
         }
+        echo "<a class='m-3 btn btn-outline-dark' href='TAuthor.php.php'>Назад</a>";
     }
 
     if(isset($_POST['delete'])) {
         $sql = "DELETE FROM author WHERE id='{$_POST['selected']}'";
         $queryDelete = $pdo->prepare($sql);
-        print_r($queryDelete);
+        //print_r($queryDelete);
         if($queryDelete->execute())
         {
             echo "
@@ -58,6 +59,7 @@ if(!empty($_POST)) {
             </div>
         ";
         }
+        echo "<a class='m-3 btn btn-outline-dark' href='TAuthor.php.php'>Назад</a>";
     }
 
         if(isset($_POST['edit'])) {
@@ -85,7 +87,7 @@ if(!empty($_POST)) {
             </div>
         ";
             }
-
+            echo "<a class='m-3 btn btn-outline-dark' href='TAuthor.php.php'>Назад</a>";
         }
 }
 
