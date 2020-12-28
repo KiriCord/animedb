@@ -18,7 +18,7 @@ include '../html/Header.html';
         const current_host = window.location.host;
 
         const request = async () => {
-            const response = await fetch(`http://${current_host}/php/api/get_character_by_id.php?id=${id}`);
+            const response = await fetch(`${location.protocol}//${current_host}/php/api/get_character_by_id.php?id=${id}`);
             const json = await response.json();
             console.log(json);
             for (const jsonKey in json) {
