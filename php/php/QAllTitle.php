@@ -47,7 +47,11 @@ include 'Utils.php'
         <div class="bodyMain">
             <h2 class="m-3">Запросы к БД</h2>
             <?
-                $query = "SELECT * FROM titles;";
+                $query = "SELECT t.title as title, group_concat(gt.name_genre) as name_genre, date_of_creation,episode_count,rating,exit_status
+                            FROM title_to_genre
+                                JOIN genre_title gt on gt.id = title_to_genre.id_genre
+                                JOIN titles t on t.id = title_to_genre.id_title
+                                    group by t.id;";
                 echo Utils::renderSelectQueryToTable($query,[]);
                 echo "<hr>";
                 echo "<p class='m-2'>Запрос: $query</p>";
