@@ -1,0 +1,17 @@
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (7, 'Эхо террора', '2014-06-11', 11, 8, 'Came Out', 6, 11);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (8, 'Эрго Прокси', '2006-02-25', 23, 9, 'Came Out', 7, 11);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (9, 'Мастера Меча Онлайн', '2012-07-07', 25, 10, 'Came Out', 2, 2);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (10, 'Мастера Меча Онлайн II', '2014-07-05', 24, 9, 'Came Out', 2, 2);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (11, 'Мастера Меча Онлайн: Порядковый ранг', '2017-02-18', 1, 10, 'Came Out', 2, 2);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (12, 'Мастера Меча Онлайн: Алисизация', '2018-10-07', 24, 10, 'Came Out', 2, 2);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (13, 'Мастера Меча Онлайн: Алисизация — Война в Подмирье', '2019-10-13', 12, 10, 'Came Out', 2, 2);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (14, 'Мастера Меча Онлайн: Алисизация — Война в Подмирье 2', '2020-07-12', 11, 10, 'Came Out', 2, 2);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (15, 'Мастера Меча Онлайн: Прогрессив — Ария в беззвёздной ночи', '2021-06-26', 1, 7, 'Announced', 2, 2);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (16, 'Токийский гуль', '2014-07-04', 12, 8, 'Came Out', 5, 10);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (17, 'Наруто', '2002-10-03', 220, 8, 'Came Out', 5, 9);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (18, 'Боруто', '2017-04-05', 179, 5, 'Ongoing', 5, 9);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (19, 'Непутёвый ученик в школе магии', '2014-04-06', 26, 8, 'Came Out', 3, 3);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (20, 'Непутёвый ученик в школе магии: Гость', '2020-06-04', 13, 9, 'Ongoing', 8, 3);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (21, 'Код Гиас: Восставший Лелуш', '2006-10-06', 25, 10, 'Came Out', 1, 1);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (22, 'Милый во Франксе', '2018-01-13', 24, 8, 'Came Out', 2, 12);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (23, 'Первый отряд: Момент истины', '2009-05-13', 1, 6, 'Came Out', 9, 13);

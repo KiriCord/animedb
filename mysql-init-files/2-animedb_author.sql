@@ -1,0 +1,9 @@
+INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (1, 'Ookouchi', 'Ichirou', null);
+INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (2, 'Reki', 'Kawahara', null);
+INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (3, 'Satou', 'Tsutomu', null);
+INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (4, 'Hata', 'Kenjirou', '1975-11-19');
+INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (9, 'Masashi', 'Kishimoto', '1974-11-08');
+INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (10, 'Sui', 'Ishida', '1986-12-28');
+INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (11, 'Shinichiro', 'Watanabe', '1965-05-24');
+INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (12, 'Atsushi', 'Nishigori', '1978-09-14');
+INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (13, 'Михаил', 'Шприц', '1974-05-01');

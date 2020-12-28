@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba95d804-b488-4bcb-9eeb-fa81125a5fcb" name="Default Changelist" comment="QueryDB">
-      <change afterPath="$PROJECT_DIR$/php/php/api/get_author_by_id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/php/api/get_character_by_id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/php/api/get_chartotitle_by_id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/php/api/get_genre_by_id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/php/api/get_studio_by_id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/php/api/get_title_by_id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/php/api/get_titletogenre_by_id.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TAuthor.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TAuthor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TCharacter.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TCharacter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TCharacterToTitle.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TCharacterToTitle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TGenre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TGenre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TStudio.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TStudio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TTitle.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TTitle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/TTitleToGenre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/TTitleToGenre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/php/queryBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php/queryBD.php" afterDir="false" />
-    </list>
+    <list default="true" id="ba95d804-b488-4bcb-9eeb-fa81125a5fcb" name="Default Changelist" comment="QueryDB" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +99,7 @@
       <workItem from="1608963344355" duration="5860000" />
       <workItem from="1608983760486" duration="4736000" />
       <workItem from="1609062013238" duration="1383000" />
-      <workItem from="1609147293539" duration="11696000" />
+      <workItem from="1609147293539" duration="12360000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1608390755660</created>
@@ -168,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608990407775</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add get by id">
+      <created>1609162666896</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609162666896</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +183,8 @@
     <MESSAGE value="Started rework Query Handler." />
     <MESSAGE value="Rework Query Handler." />
     <MESSAGE value="Fix QHandlers and add data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix QHandlers and add data" />
+    <MESSAGE value="add get by id" />
+    <option name="LAST_COMMIT_MESSAGE" value="add get by id" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
