@@ -49,7 +49,7 @@ require 'home.php';
             <div class="col">
                 <div class="row">
                     <form method="POST" action="QAllTitle.php">
-                        <h6 class="m-1">1) Вывод всех тайтлов:
+                        <h6 class="m-1">1) Вывод всех аниме и их жанров:
                             <button type="submit" name="all_title" class="m-2 btn btn-outline-dark">Выполнить</button>
                         </h6>
                     </form>
@@ -57,7 +57,7 @@ require 'home.php';
                 <hr>
                 <div class="row">
                     <form method="POST" action="QTitleStatus.php">
-                        <h6 class="m-1">2) Вывод всех тайтлов по выбранному статусу выхода тайтла:
+                        <h6 class="m-1">2) Вывод всех аниме по выбранному статусу выхода аниме:
                             <select name="status">
                                 <option value="Announced">Announced</option>
                                 <option value="Came Out">Came Out</option>
@@ -70,7 +70,7 @@ require 'home.php';
                 <hr>
                 <div class="row">
                     <form method="POST" action="QTitleRating.php">
-                        <h6 class="m-1">3) Вывод всех тайтлов, которые выше или равны определенному рейтингу:
+                        <h6 class="m-1">3) Вывод всех аниме, которые выше или равны определенному рейтингу:
                             <input type="number" name="rating" min="1" max="10">
                             <button type="submit" name="title_rating" class="m-2 btn btn-outline-dark">Выполнить</button>
                         </h6>
@@ -79,7 +79,7 @@ require 'home.php';
                 <hr>
                 <div class="row">
                     <form method="POST" action="QTitleGenre.php">
-                        <h6 class="m-1">4) Вывод всех тайтлов, определённого жанра:
+                        <h6 class="m-1">4) Вывод всех аниме, определённого жанра:
                             <select name="all_genre">
                             <?
                                 foreach ($pdo->query('SELECT DISTINCT id,name_genre FROM genre_title') as $row)
@@ -95,8 +95,18 @@ require 'home.php';
                 <hr>
                 <div class="row">
                     <form method="POST" action="QTitleCreateData.php">
-                        <h6 class="m-1">5) Вывод всех тайтлов, по определённой дате:
-                            <input type="date" name="date_of_creation">
+                        <h6 class="m-1">5) Вывод всех аниме, по определённой дате:
+                            <select name="date_of_creation">
+                                <?
+                                    foreach ($pdo->query("SELECT DISTINCT date_of_creation FROM titles") as $row)
+                                    {
+                                        echo "
+                                            <option value='{$row['date_of_creation']}'>{$row['date_of_creation']}</option>
+                                        ";
+                                    }
+                                ?>
+                            </select>
+<!--                            <input type="date" name="date_of_creation">-->
                             <button type="submit" name="title_date" class="m-2 btn btn-outline-dark">Выполнить</button>
                         </h6>
                     </form>
@@ -104,7 +114,7 @@ require 'home.php';
                 <hr>
                 <div class="row">
                     <form method="POST" action="QAllCharacterTitle.php">
-                        <h6 class="m-1">6) Вывод всех персонажей по какому-либо тайтлу:
+                        <h6 class="m-1">6) Вывод всех персонажей по какому-либо аниме:
                             <select name="all_title_char">
                                 <?
                                 foreach ($pdo->query('SELECT DISTINCT id,title FROM titles') as $row)
@@ -120,7 +130,7 @@ require 'home.php';
                 <hr>
                 <div class="row">
                     <form method="POST" action="QTitleStudio.php">
-                        <h6 class="m-1">7) Вывод всех тайтлов по выбранной студии:
+                        <h6 class="m-1">7) Вывод всех аниме по выбранной студии:
                             <select name="all_studio">
                                 <?
                                 foreach ($pdo->query('SELECT DISTINCT id,name_studio FROM studio') as $row)
@@ -136,7 +146,7 @@ require 'home.php';
                 <hr>
                 <div class="row">
                     <form method="POST" action="QAllTitleAuthor.php">
-                        <h6 class="m-1">8) Вывод всех тайтлов по автору:
+                        <h6 class="m-1">8) Вывод всех аниме по автору:
                             <select name="all_author">
                                 <?
                                 foreach ($pdo->query('SELECT DISTINCT id, first_name, second_name FROM author') as $row)
