@@ -159,6 +159,30 @@ require 'home.php';
                         </h6>
                     </form>
                 </div>
+                <hr>
+                <div class="row">
+                    <form method="POST" action="QPopularChar.php">
+                        <h6 class="m-1">9) Список всех используемых персонажей:
+                            <button type="submit" name="popularchar" class="m-2 btn btn-outline-dark">Выполнить</button>
+                        </h6>
+                    </form>
+                </div>
+                <hr>
+                <div class="row">
+                    <form method="POST" action="QPopularGenre.php">
+                        <h6 class="m-1">10) Самый популярный жанр:
+                            <button type="submit" name="populargenre" class="m-2 btn btn-outline-dark">Выполнить</button>
+                        </h6>
+                    </form>
+                </div>
+                <hr>
+                <div class="row">
+                    <form method="POST" action="QProductiveAuthor.php">
+                        <h6 class="m-1">11) Самый продуктивный автор:
+                            <button type="submit" name="populargenre" class="m-2 btn btn-outline-dark">Выполнить</button>
+                        </h6>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
