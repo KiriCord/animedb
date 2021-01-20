@@ -15,3 +15,18 @@ INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, 
 INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (21, 'Код Гиас: Восставший Лелуш', '2006-10-06', 25, 10, 'Came Out', 1, 1);
 INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (22, 'Милый во Франксе', '2018-01-13', 24, 8, 'Came Out', 2, 12);
 INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (23, 'Первый отряд: Момент истины', '2009-05-13', 1, 6, 'Came Out', 9, 13);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (25, 'Реинкарнация безработного: История о приключениях в другом мире', '2021-01-11', 11, 8, 'Ongoing', 10, 14);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (26, 'Виви: Песнь флюоритового глаза', '2021-01-21', 12, 7, 'Announced', 2, 4);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (27, 'Повелитель монстров', '2020-12-10', 12, 6, 'Ongoing', 5, 12);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (28, 'Хоримия', '2021-01-11', 12, 9, 'Ongoing', 2, 10);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (29, 'Акватоп белого песка', '2021-03-21', 12, 6, 'Announced', 6, 11);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (30, 'Космический линкор Ямато 2202', '2021-04-21', 24, 7, 'Announced', 2, 2);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (31, 'Комбатанты будут высланы!', '2021-04-09', 12, 7, 'Announced', 4, 10);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (32, 'Повесть о лунной принцессе', '2020-11-05', 12, 8, 'Ongoing', 2, 12);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (33, 'Пикник в Потусторонье', '2021-01-15', 12, 5, 'Ongoing', 8, 1);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (34, 'Пять невест', '2021-01-30', 12, 8, 'Announced', 1, 3);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (35, 'Пять невест 2', '2021-04-25', 12, 7, 'Announced', 1, 3);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (36, 'Экс-Арм', '2021-01-11', 12, 2, 'Ongoing', 9, 14);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (37, 'Маг-целитель: Новый старт', '2021-01-16', 12, 6, 'Ongoing', 6, 10);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (39, 'Аватар короля 2', '2021-04-03', 12, 5, 'Announced', 4, 1);
+INSERT INTO animedb.titles (id, title, date_of_creation, episode_count, rating, exit_status, id_studio, id_author) VALUES (40, 'Пример', '2021-01-01', 4, 2, 'Announced', 10, 13);

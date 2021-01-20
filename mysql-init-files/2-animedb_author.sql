@@ -7,3 +7,4 @@ INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (10, 'Sui',
 INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (11, 'Shinichiro', 'Watanabe', '1965-05-24');
 INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (12, 'Atsushi', 'Nishigori', '1978-09-14');
 INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (13, 'Михаил', 'Шприц', '1974-05-01');
+INSERT INTO animedb.author (id, first_name, second_name, DOB) VALUES (14, 'Rifujin', 'Magonote', '1979-01-24');

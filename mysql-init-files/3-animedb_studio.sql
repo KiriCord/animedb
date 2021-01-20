@@ -7,3 +7,4 @@ INSERT INTO animedb.studio (id, name_studio) VALUES (6, 'MAPPA');
 INSERT INTO animedb.studio (id, name_studio) VALUES (7, 'Manglobe');
 INSERT INTO animedb.studio (id, name_studio) VALUES (8, '8bit');
 INSERT INTO animedb.studio (id, name_studio) VALUES (9, 'Studio 4°C');
+INSERT INTO animedb.studio (id, name_studio) VALUES (10, 'Bind');

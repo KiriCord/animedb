@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba95d804-b488-4bcb-9eeb-fa81125a5fcb" name="Default Changelist" comment="QueryDB" />
+    <list default="true" id="ba95d804-b488-4bcb-9eeb-fa81125a5fcb" name="Default Changelist" comment="QueryDB">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-init-files/0-tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-init-files/0-tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-init-files/2-animedb_author.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-init-files/2-animedb_author.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-init-files/3-animedb_studio.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-init-files/3-animedb_studio.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-init-files/4-animedb_titles.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-init-files/4-animedb_titles.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,17 +48,18 @@
     <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm" value="WSL" />
     <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm" value="WSL" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="database.data.extractors.current.id" value="HTML-Groovy.html.groovy" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/12" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Dev\PHP\animedb\php\php" />
-      <recent name="D:\Dev\PHP\animedb\php" />
       <recent name="D:\Dev\PHP\animedb" />
       <recent name="D:\Dev\PHP\animedb\mysql-init-files" />
+      <recent name="D:\Dev\PHP\animedb\php\php" />
+      <recent name="D:\Dev\PHP\animedb\php" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,7 +109,21 @@
       <workItem from="1608963344355" duration="5860000" />
       <workItem from="1608983760486" duration="4736000" />
       <workItem from="1609062013238" duration="1383000" />
-      <workItem from="1609147293539" duration="12360000" />
+      <workItem from="1609147293539" duration="13267000" />
+      <workItem from="1609167830751" duration="632000" />
+      <workItem from="1609170011753" duration="1084000" />
+      <workItem from="1609172926382" duration="371000" />
+      <workItem from="1609173816748" duration="319000" />
+      <workItem from="1609178082976" duration="5141000" />
+      <workItem from="1610403453551" duration="23000" />
+      <workItem from="1610892060112" duration="1189000" />
+      <workItem from="1610894973348" duration="92000" />
+      <workItem from="1610895074847" duration="596000" />
+      <workItem from="1610966292827" duration="383000" />
+      <workItem from="1610994708408" duration="272000" />
+      <workItem from="1611033193420" duration="1234000" />
+      <workItem from="1611034775791" duration="4203000" />
+      <workItem from="1611122786523" duration="2187000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1608390755660</created>
@@ -157,7 +181,42 @@
       <option name="project" value="LOCAL" />
       <updated>1609162666896</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add ins and gitignore">
+      <created>1609163790298</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609163790298</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add caddyfile">
+      <created>1609170208123</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609170208123</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix http">
+      <created>1609170772336</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609170772336</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix QAllTitle">
+      <created>1609178350916</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1609178350916</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add new query">
+      <created>1611123863492</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611123863492</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +243,12 @@
     <MESSAGE value="Rework Query Handler." />
     <MESSAGE value="Fix QHandlers and add data" />
     <MESSAGE value="add get by id" />
-    <option name="LAST_COMMIT_MESSAGE" value="add get by id" />
+    <MESSAGE value="add ins and gitignore" />
+    <MESSAGE value="add caddyfile" />
+    <MESSAGE value="fix http" />
+    <MESSAGE value="fix QAllTitle" />
+    <MESSAGE value="add new query" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new query" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
