@@ -40,8 +40,8 @@ CREATE TABLE IF NOT EXISTS title_to_genre
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     id_title BIGINT,
     id_genre BIGINT,
-    FOREIGN KEY  (id_title) REFERENCES titles(id) ON DELETE SET NULL,
-    FOREIGN KEY (id_genre) REFERENCES genre_title(id) ON DELETE SET NULL
+    FOREIGN KEY  (id_title) REFERENCES titles(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_genre) REFERENCES genre_title(id) ON DELETE CASCADE
 );
 
 ALTER TABLE title_to_genre ADD unique(id_title, id_genre);
@@ -59,8 +59,8 @@ CREATE TABLE IF NOT EXISTS character_to_title
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     id_title BIGINT,
     id_character BIGINT,
-    FOREIGN KEY (id_title) REFERENCES  titles(id) ON DELETE SET NULL,
-    FOREIGN KEY (id_character) REFERENCES the_character(id) ON DELETE SET NULL
+    FOREIGN KEY (id_title) REFERENCES  titles(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_character) REFERENCES the_character(id) ON DELETE CASCADE
 );
 
 ALTER TABLE character_to_title ADD unique(id_title, id_character);
